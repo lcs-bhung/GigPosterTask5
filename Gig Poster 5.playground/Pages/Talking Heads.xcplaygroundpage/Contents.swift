@@ -69,7 +69,7 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600
 //Draw the triangle
 for xVal in stride(from: 0, through: 400, by: 400/9+0.4) { for yVal in stride(from: 200, through: 600, by: 400/9+0.4) {
     
-    if xVal + 200 >= yVal && yVal <= xVal+200 {
+    if xVal + 230 >= yVal && yVal <= xVal+230 {
         canvas.fillColor = brightYellow
     } else {
          canvas.fillColor = offWhite
