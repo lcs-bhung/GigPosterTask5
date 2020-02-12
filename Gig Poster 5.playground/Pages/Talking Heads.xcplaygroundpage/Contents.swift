@@ -84,3 +84,13 @@ for xVal in stride(from: 0, through: 400, by: 400/9+0.4) { for yVal in stride(fr
     
 }
 
+//Draw the texts
+canvas.textColor = offWhite
+canvas.drawText(message: "talking heads", at: Point(x: 25, y: 150), size: 38, kerning: 0)
+canvas.drawText(message: "friday, saturday, sunday", at: Point(x: 25, y: 30), size: 8, kerning: 0)
+canvas.drawText(message: "september 12, 13, 14 1975", at: Point(x: 25, y: 20), size: 8, kerning: 0)
+canvas.drawText(message: "at cbgb and emfug", at: Point(x: 150, y: 30), size: 8, kerning: 0)
+canvas.drawText(message: "315 bowery, new york city", at: Point(x: 150, y: 20), size: 8, kerning: 0)
+canvas.drawText(message: "also appearing:", at: Point(x: 265, y: 30), size: 8, kerning: 0)
+canvas.drawText(message: "from brooklyn, the shirts", at: Point(x: 265, y: 20), size: 8, kerning: 0)
+
