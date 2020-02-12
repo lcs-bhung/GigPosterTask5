@@ -68,7 +68,12 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600
 
 //Draw the triangle
 for xVal in stride(from: 0, through: 400, by: 400/9+0.4) { for yVal in stride(from: 200, through: 600, by: 400/9+0.4) {
-    canvas.fillColor = offWhite
+    
+    if xVal + 200 >= yVal && yVal <= xVal+200 {
+        canvas.fillColor = brightYellow
+    } else {
+         canvas.fillColor = offWhite
+    }
     canvas.drawShapesWithBorders = false
     var trianglePoints : [Point] = []
     trianglePoints.append(Point(x: xVal, y: yVal))
@@ -78,3 +83,4 @@ for xVal in stride(from: 0, through: 400, by: 400/9+0.4) { for yVal in stride(fr
     }
     
 }
+
